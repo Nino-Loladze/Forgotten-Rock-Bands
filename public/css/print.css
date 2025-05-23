@@ -1,0 +1,126 @@
+@media print {
+  /* Hide video elements and their wrappers */
+  video,
+  .video-wrapper,
+  iframe,
+  .carousel-section,
+  .carousel,
+  .carousel-item,
+  .carousel-indicators,
+  .carousel-control-prev,
+  .carousel-control-next,
+  audio,
+  .embedded-audio,
+  .audio-section {
+    display: none !important;
+  }
+
+  #mainmenu,
+  nav,
+  .return-link,
+  .btn {
+    display: none !important;
+  }
+
+  body, 
+  .content-wrapper,
+  header,
+  main,
+  footer,
+  .bg-light,
+  .card,
+  .card-header,
+  .card-body {
+    background: none !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  img,
+  .band-image {
+    max-width: 100% !important;
+    max-height: 4in !important; 
+    page-break-inside: avoid;
+  }
+
+  body {
+    font-family: serif !important; 
+    font-size: 12pt !important;
+    line-height: 1.3 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p, li {
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid #999 !important;
+  }
+
+  .container,
+  .content-wrapper,
+  .row,
+  .col-12,
+  section,
+  article {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .band-section,
+  article {
+    page-break-before: always;
+  }
+
+  main > article:first-child,
+  main > section:first-child,
+  main > section:first-child article:first-child {
+    page-break-before: avoid;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    font-style: italic;
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  a.external-link:after {
+    content: " (" attr(href) ")";
+  }
+
+  body:before {
+    content: "Rock Music History";
+    display: block;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 20pt;
+  }
+
+  @page {
+    margin: 0.5in;
+    @bottom-center {
+      content: "Page " counter(page);
+    }
+  }
+}

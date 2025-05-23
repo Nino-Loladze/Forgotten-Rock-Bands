@@ -1,0 +1,185 @@
+/* Additional classes for introduction section */
+.intro-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.intro-quote {
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.band-video {
+  margin: 15px 0;
+}
+
+.video-thumbnails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.video-thumbnail {
+  width: 32%;
+}
+
+/* .embedded-audio {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .audio-item {
+            width: 32%;
+            text-align: center;
+            margin-bottom: 20px;
+        } */
+
+.title-spacing {
+  margin-bottom: 50px;
+}
+
+/* Horizontal image gallery styles */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.333% - 10px); /* Display 3 images per row by default */
+  min-width: 200px;
+  margin-bottom: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.gallery-caption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* For 2 images side by side */
+.image-pair {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.image-pair .pair-item {
+  flex: 0 0 calc(50% - 7.5px);
+}
+
+.image-pair .pair-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 0 0 calc(50% - 7.5px); /* 2 images per row on tablets */
+  }
+
+  .image-pair {
+    flex-direction: column;
+  }
+
+  .image-pair .pair-item {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 0 0 100%; /* 1 image per row on mobile */
+  }
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    overflow: auto;
+}
+
+.modal-content {
+    display: block;
+    margin: 50px auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caption {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.album-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.album-title {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}

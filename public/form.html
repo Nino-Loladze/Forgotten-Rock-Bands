@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <title>Form - Forgotten Rock Bands</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/page-form.css" >
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="content-wrapper">
+      <header>
+        <nav id="mainmenu">
+          <a href="index.html">Homepage</a> |
+          <a href="forgotten-bands.html">Forgotten Bands</a> | <b>Form</b>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <div class="form-wrapper">
+          <div class="form-header px-3">
+            <h2>Send your favorite forgotten rock bands</h2>
+            <p>Fill out the form below to share your thoughts!</p>
+          </div>
+
+          <div class="form-content bg-white">
+            <form
+              action="mailto:nloladze@aat.ge"
+              method="post"
+              enctype="text/plain"
+              class="bg-white"
+            >
+              <fieldset class="border rounded bg-light p-3 mb-3">
+                <legend>Datasheet of Rock Band</legend>
+                <label for="band-name"><strong>Band name</strong></label>
+                <input
+                  type="text"
+                  id="band-name"
+                  name="band-name"
+                  class="form-control band-name-input"
+                  required
+                  maxlength="50"
+                  size="30"
+                >
+                <label for="opinion" class="mt-2"
+                  ><strong
+                    >Your opinion, your thoughts about this band</strong
+                  ></label
+                >
+                <textarea
+                  id="opinion"
+                  name="opinion"
+                  class="form-control opinion-textarea"
+                  rows="4"
+                  maxlength="2000"
+                ></textarea>
+              </fieldset>
+
+              <fieldset class="border rounded bg-light p-3 mb-3">
+                <legend>Rating</legend>
+                <p>Your rating on a scale from 1 to 5:</p>
+                <div
+                  class="rating-modern-group"
+                  role="radiogroup"
+                  aria-label="Band rating"
+                >
+                  <label class="rating-modern-option">
+                    <input
+                      type="radio"
+                      id="rate1"
+                      name="rating"
+                      value="1"
+                      aria-label="1 - Not much, but still forgotten"
+                    >
+                    <span class="rating-value">1</span>
+                    <span class="rating-desc">Not much, but still forgotten</span>
+                  </label>
+                  <label class="rating-modern-option">
+                    <input
+                      type="radio"
+                      id="rate2"
+                      name="rating"
+                      value="2"
+                      aria-label="2 - Slightly forgotten"
+                    >
+                    <span class="rating-value">2</span>
+                    <span class="rating-desc">Slightly forgotten</span>
+                  </label>
+                  <label class="rating-modern-option">
+                    <input
+                      type="radio"
+                      id="rate3"
+                      name="rating"
+                      value="3"
+                      aria-label="3 - Moderately forgotten"
+                    >
+                    <span class="rating-value">3</span>
+                    <span class="rating-desc">Moderately forgotten</span>
+                  </label>
+                  <label class="rating-modern-option">
+                    <input
+                      type="radio"
+                      id="rate4"
+                      name="rating"
+                      value="4"
+                      aria-label="4 - Very forgotten"
+                    >
+                    <span class="rating-value">4</span>
+                    <span class="rating-desc">Very forgotten</span>
+                  </label>
+                  <label class="rating-modern-option">
+                    <input
+                      type="radio"
+                      id="rate5"
+                      name="rating"
+                      value="5"
+                      aria-label="5 - Really forgotten, almost unknown"
+                    >
+                    <span class="rating-value">5</span>
+                    <span class="rating-desc"
+                      >Really forgotten, almost unknown</span
+                    >
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="border rounded bg-light p-3">
+                <legend>Personal info</legend>
+                <div class="personal-info-grid">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      required
+                      maxlength="30"
+                      size="20"
+                      placeholder="Name"
+                    >
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      required
+                      maxlength="40"
+                      size="25"
+                      placeholder="Email"
+                    >
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="form-check mt-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                  >
+                  <label class="form-check-label" for="newsletter"
+                    >I'd like to subscribe to a newsletter</label
+                  >
+                </div>
+              </fieldset>
+
+              <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="mt-4 p-3 bg-light border">
+        <h4>contact information</h4>
+        <p>Email: nloladze@aat.ge | Phone: +123 456 7890</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

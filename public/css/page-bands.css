@@ -1,0 +1,155 @@
+.carousel {
+  background-color: #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 300px;
+}
+
+.carousel-caption {
+  color: #d9d9d9; 
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  bottom: 20px; 
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.band-section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.band-image {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  max-width: 350px;
+}
+
+.song-list {
+  width: 100%;
+  max-width: 800px;
+}
+
+details {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+summary {
+  background-color: #cfe2ff;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+summary:hover {
+  background-color: #b6d4fe;
+}
+
+.song-table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.song-table th,
+.song-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.song-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.song-header {
+  font-weight: bold;
+  background-color: #cfe2ff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.song-data {
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-listing {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.track-listing table {
+  width: 100%;
+}
+
+.track-listing th,
+.track-listing td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.embedded-audio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.audio-section audio {
+  width: 100%
+}
+
+.audio-item {
+  flex: 0 0 calc(32% - 14px);
+  min-width: 180px;
+  margin-bottom: 20px;
+}
+
+.audio-item img {
+  width: 100%;
+  cursor: pointer
+}
+
+.audio-caption {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.audio-caption audio {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .audio-item {
+    flex: 0 0 100%;
+  }
+}
+
+audio {
+  max-width: 100%;
+}

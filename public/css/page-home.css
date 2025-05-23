@@ -1,0 +1,26 @@
+/* Video container styling */
+.video-wrapper {
+  float: right;
+  width: 45%;
+  margin: 0 0 15px 20px;
+}
+
+.video-wrapper video {
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-wrapper {
+    float: none;
+    width: 100%;
+    margin: 15px 0;
+  }
+}
